@@ -4,11 +4,6 @@
 
   # osx config
   - role: dock
-    apps:
-    - /Applications/Firefox.app
-    - /Applications/Spotify.app
-    - /Applications/Atom.app
-    - /Applications/iTerm.app
     folders:
     - path: ~/
     - path: ~/Documents
@@ -18,14 +13,6 @@
     package_name: asepsis
   - role: dashboard
     disabled: YES
-
-  # fonts
-  - role: cask_package
-    tap: caskroom/fonts
-    package_name: font-source-code-pro
-  - role: cask_package
-    tap: caskroom/fonts
-    package_name: font-sauce-code-powerline
 
   # cli
   # shell tooling
@@ -51,3 +38,11 @@
   ## text editors
   - role: cask_package
     package_name: atom
+
+  # go-client 
+  - role: cask_package
+    package_name: go-agent
+
+  # cocoapods
+  - role: gem_package
+    package_name: cocoapods
