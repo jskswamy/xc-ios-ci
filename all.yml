@@ -2,13 +2,6 @@
 - hosts: all
   roles:
 
-  # osx config
-  - role: dock
-    folders:
-    - path: ~/
-    - path: ~/Documents
-    - path: ~/Downloads
-      sort: datemodified
   - role: cask_package
     package_name: asepsis
   - role: dashboard
